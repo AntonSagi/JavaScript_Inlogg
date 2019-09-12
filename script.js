@@ -1,5 +1,5 @@
 
-//  Kolla ifall användaren är inloggad sen tidigare 
+//Kolla ifall användaren är inloggad sen tidigare 
 window.onload = function(){
     var checkAccess = localStorage.getItem("Access");
     if (checkAccess === "true"){
@@ -31,7 +31,7 @@ function myAccess(){
 
         myLoggedIn();
     }
-
+    //Om anv / lösen är felaktigt, ta bort login-sidan och generera en ny sida som informerar om att användaren har skrivit fel
     else {
         var clearLogin = document.getElementById("loginContent");
         clearLogin.style.display = "none";
